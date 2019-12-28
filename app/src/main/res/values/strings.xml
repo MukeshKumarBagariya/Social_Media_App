@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">tweet</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">aPaq6ccY4e3Tfq9foFg13lCAV5FohbBFkHT9f5gl</string>
+    <string name="back4app_client_key">8gIU0W7YqHAQOzsQn0INppeJU5O6Io7PNLysIQH0</string>
+</resources>
