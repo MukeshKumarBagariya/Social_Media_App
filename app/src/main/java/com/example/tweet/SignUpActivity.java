@@ -75,7 +75,9 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 @Override
                 public void done(ParseException e) {
                     if (e == null){
-                        Toast.makeText(SignUpActivity.this,"Successfully",Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(SignUpActivity.this,WelcomeActivity.class);
+                        startActivity(intent);
+                        Toast.makeText(SignUpActivity.this,"Sign up Successfully",Toast.LENGTH_LONG).show();
                     } else {
                         Toast.makeText(SignUpActivity.this,"....Unsuccessfully....",Toast.LENGTH_LONG).show();
                     }

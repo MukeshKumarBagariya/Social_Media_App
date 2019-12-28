@@ -62,6 +62,8 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
                 @Override
                 public void done(ParseUser user, ParseException e) {
                     if (e == null && user != null) {
+                        Intent intent = new Intent(LogInActivity.this,WelcomeActivity.class);
+                        startActivity(intent);
                         Toast.makeText(LogInActivity.this, "LoggedIn Successfully.", Toast.LENGTH_LONG).show();
                     } else {
                         Toast.makeText(LogInActivity.this, "Something went wrong.", Toast.LENGTH_LONG).show();
