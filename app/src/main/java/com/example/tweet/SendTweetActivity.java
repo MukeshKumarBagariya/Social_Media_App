@@ -37,6 +37,7 @@ public class SendTweetActivity extends AppCompatActivity {
             }
         });
     }
+    //send Tweet
     public void sendTweets(View view){
         ParseObject parseObject = new ParseObject("UsersTweet");
         parseObject.put("tweet",tweetTextArea.getText().toString());
