@@ -56,7 +56,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         });
         signUP.setOnClickListener(SignUpActivity.this);
         if (ParseUser.getCurrentUser() != null){
-            ParseUser.getCurrentUser().logOut();
+            transitionActivity();
         }
 
     }
@@ -108,5 +108,10 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             e.printStackTrace();
         }
 
+    }
+    private void transitionActivity(){
+        Intent intent = new Intent(SignUpActivity.this,WelcomeActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
